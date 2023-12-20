@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>W3.CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    .mySlides {
+      width: 100%;
+    }
+
+    .w3-content {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .slide-container {
+      display: flex;
+      transition: transform 1s ease-in-out;
+    }
+
+    .pagination {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 5px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background-color: #717171;
+    }
+  </style>
+</head>
+<body>
+
+<h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-display-container">
+  <div class="slide-container">
+    <img class="mySlides" src="images/1.jpg">
+    <img class="mySlides" src="images/2.jpg">
+    <img class="mySlides" src="images/3.jpg">
+    <img class="mySlides" src="images/4.jpg">
+    <img class="mySlides" src="images/1.jpg">
+    <img class="mySlides" src="images/2.jpg">
+    <img class="mySlides" src="images/3.jpg">
+    <img class="mySlides" src="images/4.jpg">
+  </div>
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+  <div class="pagination">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+    <span class="dot" onclick="currentSlide(7)"></span>
+    <span class="dot" onclick="currentSlide(8)"></span>
+    <!-- Add more dots for additional slides -->
+  </div>
+</div>
+
+<script>
+  var slideIndex = 0;
+  var timer;
+
+  showSlides();
+
+  function plusDivs(n) {
+    clearTimeout(timer);
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    clearTimeout(timer);
+    showSlides(slideIndex = n - 1);
+  }
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var slideContainer = document.querySelector(".slide-container");
+
+    if (slideIndex >= slides.length) {
+      slideIndex = 0;
+    }
+    if (slideIndex < 0) {
+      slideIndex = slides.length - 1;
+    }
+
+    var translationValue = -slideIndex * 100;
+
+    slideContainer.style.transform = "translateX(" + translationValue + "%)";
+
+    timer = setTimeout(function () {
+      showSlides(slideIndex += 1);
+    }, 3000);
+
+    // Update active pagination dot
+    var dots = document.getElementsByClassName("dot");
+    for (var i = 0; i < dots.length; i++) {
+      dots[i].classList.remove("active");
+    }
+    dots[slideIndex].classList.add("active");
+  }
+</script>
+
+</body>
+</html>
