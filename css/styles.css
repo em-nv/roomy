@@ -576,7 +576,7 @@ button{
     bottom: 0;
     height: 100%;
     left: 0;
-    background: whitesmoke;
+    background: beige;
     width: 60px;
     overflow: hidden;
     transition: width 0.2s linear;
@@ -600,25 +600,30 @@ button{
     margin-left: 10px;
 }
 .SideMenu .nav-item{
-    color: red;
+    color: brown;
     position: relative;
     top: 12px;
     margin-left: 0;
 }
 .SideMenu a:hover{
-    background: white;
-}
+   background: brown;
+} 
 .SideMenu nav:hover{
     width: 250px;
     transition: all 0.5s ease;
+    color: beige;
 }
 .SideMenu .logout{
     position: absolute;
     bottom: 0;
 }
-
-.SideMenu ul li:hover a{
-    color: white;
+.SideMenu nav ul li:hover a{
+    color: beige;
     background-color: brown;
+    .nav-item{
+        color: beige;
+    }
+
 }
 /*END OF SIDE MENU*/
+

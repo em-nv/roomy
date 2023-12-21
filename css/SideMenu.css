@@ -1,13 +1,24 @@
 /*START OF SIDE MENU*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color:beige ;
+}
 nav{
     position: absolute;
     top: 0;
     bottom: 0;
     height: 100%;
     left: 0;
-    background: whitesmoke;
+    background: beige;
     width: 60px;
     overflow: hidden;
     transition: width 0.2s linear;
@@ -48,7 +59,7 @@ a{
     margin-left: 10px;
 }
 .nav-item{
-    color: brown;
+    color: red;
     position: relative;
     top: 12px;
     margin-left: 0;
