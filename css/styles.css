@@ -143,40 +143,6 @@ button{
 }
 /*END OF SEARCH BAR*/
 
-
-/*START OF NAVIGATION BAR*/
-.nav-bar, a {
-    text-decoration: none;
-    color: beige;
-    display: block;
-}
-.nav-bar > ul {
-    list-style-type: none;
-    margin-top: 10px;
-    padding: 0;
-}
-.nav-bar > ul > li > a {
-    padding: 10px;
-    font-weight: bold;
-    transition-duration: 0.2s;
-}
-.nav-bar > ul > li > a:hover {
-    background-color: beige;
-    color: brown;
-    
-}
-.nav-bar li {
-    float: right;
-    width: 11%;
-    text-align: center;
-}
-
-.nav-bar .active {
-    border-bottom: 2px solid beige;
-    
-}
-/*END NAVIGATION BAR*/
-
 .container{
     margin-left: 140px;
     margin-right: 140px;
@@ -410,10 +376,8 @@ button{
 .stars {
     margin-top: 10px;
     .fa {
-
         font-size: 20px;
-        color: black;
-        
+        color: rgb(85, 83, 83);;
     }
     .checked {
         color: brown;
