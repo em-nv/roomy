@@ -580,7 +580,7 @@ button{
     width: 60px;
     overflow: hidden;
     transition: width 0.2s linear;
-    box-shadow: 0 20px 35px rgba(255, 0, 0, 0.3); 
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5); 
 }
 .SideMenu a{
     position: relative;
@@ -615,5 +615,10 @@ button{
 .SideMenu .logout{
     position: absolute;
     bottom: 0;
+}
+
+.SideMenu ul li:hover a{
+    color: white;
+    background-color: brown;
 }
 /*END OF SIDE MENU*/
