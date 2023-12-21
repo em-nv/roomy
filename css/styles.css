@@ -1,7 +1,14 @@
 * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 html, body {
+    position: relative;
     margin: 0;
     padding: 0;
     background-color: beige;
@@ -22,6 +29,10 @@ header{
     top: 0;
     width: 100%;
     z-index: 1000;
+}
+footer{
+    position: relative;
+    z-index: 1; 
 }
 
 footer > p {
@@ -552,3 +563,57 @@ button{
     font-weight: bold;
     border-top: 3px brown solid;
 }
+
+/*START OF SIDE MENU*/
+.SideMenu{
+    float: left;
+    position: absolute;
+    height: 95%;
+}
+.SideMenu nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: whitesmoke;
+    width: 60px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(255, 0, 0, 0.3); 
+}
+.SideMenu a{
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+.SideMenu .fas{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 10px;
+}
+.SideMenu .nav-item{
+    color: red;
+    position: relative;
+    top: 12px;
+    margin-left: 0;
+}
+.SideMenu a:hover{
+    background: white;
+}
+.SideMenu nav:hover{
+    width: 250px;
+    transition: all 0.5s ease;
+}
+.SideMenu .logout{
+    position: absolute;
+    bottom: 0;
+}
+/*END OF SIDE MENU*/
