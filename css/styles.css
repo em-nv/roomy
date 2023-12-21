@@ -27,6 +27,9 @@ header{
 footer > p {
     text-align: center;
 }
+.headerText{
+    font-weight: bold;
+}
 
 button{
     border-style: none;
@@ -35,7 +38,6 @@ button{
     width: 27%;
     cursor: pointer;
 }
-
 
 /*START OF SEARCH BAR*/
 .search-container{
