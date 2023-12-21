@@ -18,7 +18,7 @@ header, footer {
     padding-right: 10%;
 }
 header{
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
@@ -410,8 +410,8 @@ button{
 
 
 .apartmentName{
-    text-align: center;
-    
+    font-weight: bold;
+    border-bottom: 5px brown solid;
 }
 .apparmentMainPic {
     height: 300px;
@@ -430,6 +430,7 @@ button{
     p {
         margin-right: 20px;
         font-size: larger;
+        font-weight: bold;
     }
 }
 
@@ -461,6 +462,7 @@ button{
     display: flex;
     svg{
         width: 30px;
+        fill: brown;
     }
     p{
         display: inline-flex;
@@ -493,9 +495,11 @@ button{
     }
     .buttonLeft{
         left: 0;
+        color: beige;
     }
     .buttonRight{
         right: 0;
+        color: beige;
     }
   }
 
@@ -539,4 +543,10 @@ button{
         height: 30px;
         fill: beige;
     }
+}
+
+.imageGalleryText {
+    text-align: center;
+    font-weight: bold;
+    border-top: 3px brown solid;
 }
