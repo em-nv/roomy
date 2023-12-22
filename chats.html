@@ -2,98 +2,137 @@
 <html>
   <head>
     <title>CHATS</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/messageDashboard.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
-    <h1>Profile</h1>
-  </body>
-  <header class="headerStyle">
-    <div class="search-container">
-      <div class="search-box">
-        <input type="text" placeholder="Type to search..">
-        <div class="search-icon">
-          <i class="fas fa-search"></i>
+    <header class="headerStyle">    
+      <img src="/logo/roof.png">  
+      <h2 class="headerText">ROOMY</h2>
+    </header>
+
+    <div class="SideMenu">
+      <nav>
+        <ul>
+            <li><a href="index.html">
+                <i class="fas fa-home"></i>
+                <span class="nav-item">Home</span>
+            </a></li>
+            <li><a href="profile.html">
+                <i class="fas fa-user"></i>
+                <span class="nav-item">Profile</span>
+            </a></li>
+            <li><a href="notification.html">
+                <i class="fas fa-bell"></i>
+                <span class="nav-item">Notification</span>
+            </a></li>
+            <li><a href="chats.html">
+                <i class="fas fa-comments"></i>
+                <span class="nav-item">Chats</span>
+            </a></li>
+            <li><a href="helpSupport.html">
+                <i class="fas fa-question-circle"></i>
+                <span class="nav-item">Help & Support</span>
+            </a></li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="message-dashboard">
+      <div class="sidebar">
+        <div class="centered-container">
+          <div class="search-container">
+            <input type="text" name="search" placeholder="Search...">
+          </div>
         </div>
-          <div class="cancel-icon">
-          <i class="fas fa-times"></i>
-        </div>
-        <div class="search-data">
+    
+        <div class="messages">
+          <h3 class="title">Messages(3)</h3>
+          <div class="recent active">
+            <div class="recent-img">
+              <img src="/images/1.jpg">
+            </div>
+            <div class="recent-data">
+              <h3>ABC Apartment</h3>
+              <span>You: Okay thank you!</span>
+            </div>
+          </div>
+          <div class="recent">
+            <div class="recent-img">
+              <img src="/images/2.jpg">
+            </div>
+            <div class="recent-data">
+              <h3>DEF Apartment</h3>
+              <span>You: Thank you!</span>
+            </div>
+          </div>
+          <div class="recent">
+            <div class="recent-img">
+              <img src="/images/3.jpg">
+            </div>
+            <div class="recent-data">
+              <h3>GHI Apartment</h3>
+              <span>You: Can I ask for...</span>
+            </div>
+          </div>
         </div>
       </div>
-      <script>
-        const searchBox = document.querySelector(".search-box");
-        const searchBtn = document.querySelector(".search-icon");
-        const cancelBtn = document.querySelector(".cancel-icon");
-        const searchInput = document.querySelector("input");
-        const searchData = document.querySelector(".search-data");
-        searchBtn.onclick =()=>{
-          searchBox.classList.add("active");
-          searchBtn.classList.add("active");
-          searchInput.classList.add("active");
-          cancelBtn.classList.add("active");
-          searchInput.focus();
-          /*
-          if(searchInput.value != ""){
-            var values = searchInput.value;
-            searchData.classList.remove("active");
-            searchData.innerHTML = "You just typed " + "<span style='font-weight: 500;'>" + values + "</span>";
-          }else{
-            searchData.textContent = "";
-          }
-          */
-        }
-        cancelBtn.onclick =()=>{
-          searchBox.classList.remove("active");
-          searchBtn.classList.remove("active");
-          searchInput.classList.remove("active");
-          cancelBtn.classList.remove("active");
-          searchData.classList.toggle("active");
-          searchInput.value = "";
-        }
-      </script>
-    </div>
+    
+      <div class="chatboard">
+        <div class="chat-header">
+          <h3>ABC Apartment</h3>
+        </div>
+    
+        <div class="box">
+          <div class="sender">
+            <div class="chat">
+              <div class="chat-img">
+                <img src="/images/1.jpg">
+              </div>
+              <div class="recent-data">
+                <h3>ABC Apartment <span class="time">10:00 AM</span></h3>
+                <span>Hi! How may I help you?</span>
+              </div>
+            </div>
+          </div>
+          <div class="receiver">
+            <div class="chat">
+              <div class="chat-data">
+                <h3><span class="time">10:05 AM</span>You</h3>
+                <span>Is this still available?</span>
+              </div>
+            </div>
+          </div>
 
-    <div class="nav-bar">
-      <ul>
-        <li><a href="#">Account</a></li>
-        <li><a href="aboutUs.html">About Us</a></li>
-        <li><a href="index.html">Home</a></li>
-      </ul>
-    </div>
-    <h2 class="headerText">ROOMY</h2>
-  </header>
+          <br><br><br><br>
 
-  <div class="SideMenu">
-    <nav>
-      <ul>
-          <li><a href="#">
-              <i class="fas fa-home"></i>
-              <span class="nav-item">Home</span>
-          </a></li>
-          <li><a href="#">
-              <i class="fas fa-user"></i>
-              <span class="nav-item">Profile</span>
-          </a></li>
-          <li><a href="#">
-              <i class="fas fa-bell"></i>
-              <span class="nav-item">Notification</span>
-          </a></li>
-          <li><a href="#">
-              <i class="fas fa-comments"></i>
-              <span class="nav-item">Chats</span>
-          </a></li>
-          <li><a href="#">
-              <i class="fas fa-question-circle"></i>
-              <span class="nav-item">Help & Support</span>
-          </a></li>
-      </ul>
-    </nav>
-  </div>
-  
-  <footer>
+          <div class="sender">
+            <div class="chat">
+              <div class="chat-img">
+                <img src="/images/1.jpg">
+              </div>
+              <div class="chat-data">
+                <h3>ABC Apartment <span class="time">10:07 AM</span></h3>
+                <span>Yes sir, this room is still available.</span>
+              </div>
+            </div>
+          </div>
+          <div class="receiver">
+            <div class="chat">
+              <div class="chat-data">
+                <h3><span class="time">10:09 AM</span>You</h3>
+                <span>Okay thank you!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+    <footer>
       <p>Designed and Created by: <u>NAMES</u> | BSIT 2A | Copyright © 2023</p>
   </footer>
-</body>
+  </body>
 </html>
