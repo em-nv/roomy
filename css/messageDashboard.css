@@ -21,7 +21,7 @@ header, footer {
     color: white;
     padding: 10px;
     justify-content: space-between;
-    padding-right: 10%;
+
 }
 header{
     position: sticky;
@@ -30,8 +30,12 @@ header{
     z-index: 1000;
 }
 .headerStyle img{
+    margin-top: 10px;
     float: left;
     height: 50px;
+}
+.headerText{
+    font-weight: bold;
 }
 footer{
     position: relative;
@@ -198,7 +202,7 @@ footer > p {
     float: left;
     color: white;
     width: 65%;
-    background: rgb(236, 232, 232); 
+    background: rgba(234, 234, 234, 0.532); 
     position: relative;
 }
 .chat-header {
@@ -260,8 +264,8 @@ footer > p {
 }
 .box span{
     margin-left: 10px;
-    background: gainsboro;
-    color: black;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 6px 20px;
     font-size: 16px;
     border-radius: 0px 30px 30px 30px;

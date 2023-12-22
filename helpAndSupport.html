@@ -9,54 +9,10 @@
   </head>
   <body>
     <header class="headerStyle">
-
-
-      <div class="search-container">
-          <div class="search-box">
-            <input type="text" placeholder="Type to search..">
-            <div class="search-icon">
-                <i class="fas fa-search"></i>
-            </div>
-                <div class="cancel-icon">
-                <i class="fas fa-times"></i>
-            </div>
-            <div class="search-data">
-            </div>
-          </div>
-        <script>
-          const searchBox = document.querySelector(".search-box");
-          const searchBtn = document.querySelector(".search-icon");
-          const cancelBtn = document.querySelector(".cancel-icon");
-          const searchInput = document.querySelector("input");
-          const searchData = document.querySelector(".search-data");
-          searchBtn.onclick =()=>{
-            searchBox.classList.add("active");
-            searchBtn.classList.add("active");
-            searchInput.classList.add("active");
-            cancelBtn.classList.add("active");
-            searchInput.focus();
-            /*
-            if(searchInput.value != ""){
-              var values = searchInput.value;
-              searchData.classList.remove("active");
-              searchData.innerHTML = "You just typed " + "<span style='font-weight: 500;'>" + values + "</span>";
-            }else{
-              searchData.textContent = "";
-            }
-            */
-          }
-          cancelBtn.onclick =()=>{
-            searchBox.classList.remove("active");
-            searchBtn.classList.remove("active");
-            searchInput.classList.remove("active");
-            cancelBtn.classList.remove("active");
-            searchData.classList.toggle("active");
-            searchInput.value = "";
-          }
-        </script>
+      <div class="logo">    
+        <img src="/logo/roof.png">  
+        <h2 class="headerText">ROOMY</h2>
       </div>
-
-      <h2 class="headerText">ROOMY</h2>
     </header>
 
     <div class="SideMenu">
@@ -66,7 +22,7 @@
                 <i class="fas fa-home"></i>
                 <span class="nav-item">Home</span>
             </a></li>
-            <li><a href="loginETC/profile.html">
+            <li><a href="profile.html">
                 <i class="fas fa-user"></i>
                 <span class="nav-item">Profile</span>
             </a></li>
@@ -74,11 +30,11 @@
                 <i class="fas fa-bell"></i>
                 <span class="nav-item">Notification</span>
             </a></li>
-            <li><a href="#">
+            <li><a href="chats.html">
                 <i class="fas fa-comments"></i>
                 <span class="nav-item">Chats</span>
             </a></li>
-            <li><a href="#">
+            <li><a href="helpAndSupport.html">
                 <i class="fas fa-question-circle"></i>
                 <span class="nav-item">Help & Support</span>
             </a></li>
@@ -101,7 +57,7 @@
 
 
       <div class="HSCard-Holder">
-        <a href="loginETC/profile.html">
+        <a href="#">
           <div class="HSCard">
             <svg viewBox="0 0 512 512"><path d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/></svg>
             <div class="HSCard-Content">
