@@ -224,9 +224,11 @@ button{
     width: 100%;
     background: rgb(165,42,42);
     background: linear-gradient(0deg, beige 0%, brown 100%);
+    transition-duration: 0.2s;
 }
 .card:hover{
     border: 2px solid brown;
+    transform: scale(1.1);
 }
 .card > .cardContent{
     padding: 0px 20px 20px 20px;
@@ -268,7 +270,7 @@ button{
 .cardContent > button:hover a {
     color: inherit; 
 }
-.card > img {
+.card > a > img {
     width: 100%;
     height: auto;
     padding: 20px 20px 0px 20px;
@@ -591,3 +593,52 @@ button{
 }
 /*END OF SIDE MENU*/
 
+
+/*START OF HELP & SUPPORT CARDS*/
+.HSCard-Holder{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.HSCard{
+    display: inline-flex;
+    width: 30%;
+    height: auto;
+    background-color: brown;
+    color: beige;
+    margin: 10px;
+    border-radius: 20px;
+    justify-content: center;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
+    transition-duration: 0.2s;
+    border: 2px brown solid;
+    
+    svg{
+        width: 50px;
+        fill: beige;
+    }
+    .HSCard-Content{
+        margin: 20px;
+        h4{
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+.HSCard:hover{
+    transform: scale(1.1);
+    background-color: beige;
+    border: 2px brown solid;
+
+    svg {
+        fill: brown;
+    }
+    .HSCard-Content{
+        p, h4 {
+            color: brown;
+        }
+
+    }
+}
+
+/*END OF HELP & SUPPORT CARDS*/
