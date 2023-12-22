@@ -641,3 +641,29 @@ button{
 }
 
 /*END OF HELP & SUPPORT CARDS*/
+
+
+/*START OF NOTIFICATION CSS*/
+.notif-container{
+    margin: 0 auto;
+}
+.main-notif-container{
+    width: 100%;
+    color: brown;
+    padding: 25px 20px 25px 20px;
+    margin: 15px;
+    border-radius: 20px;
+    border: 2px brown solid;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.30), 0 11px 8px rgba(0,0,0,0.22);
+    transition-duration: 0.2s;
+    h3 {
+        font-weight: bold;
+        margin: 0;
+    }
+}
+.main-notif-container:hover{
+    color: beige;
+    background-color: brown;
+    border: 2px brown solid;
+}
+/*END OF NOTIFICATION CSS*/
