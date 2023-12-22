@@ -234,6 +234,9 @@ button{
     padding: 0px 20px 20px 20px;
 }
 .cardContent {
+    h3{
+        border-bottom: 2px solid brown;
+    }
     /*START OF STAR RATINGS IN THE INDEX.HTML FILE*/
     .stars {
         margin-left: 0;
@@ -243,24 +246,20 @@ button{
     }
     /*END OF STAR RATINGS*/
 }
-.cardContent > h3 {
-    border-bottom: 2px solid brown;
-}
+
 .cardContent > button {
     width: 100%;
     background-color: brown;
     color: beige;
     display: block;
-    margin: 0 auto;
     border: 2px solid brown;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
 .cardContent > button:hover {
     width: 100%;
     background-color: beige;
     color: brown;
     display: block;
-    margin: 0 auto;
     border: 2px solid brown;
 }
 .cardContent > button a {
